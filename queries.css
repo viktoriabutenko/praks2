@@ -1,0 +1,101 @@
+@media only screen and (max-width: 1250px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /*** ---- HEADER ---- ***/
+
+  .header-image {
+    height: 300px;
+  }
+
+  #logo {
+    padding-left: 0;
+  }
+
+  #searchbox {
+    margin-right: 0;
+  }
+
+  /*** ---- CANTACT INFO ---- ***/
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info__left,
+  .contact-info__right {
+    width: 75%;
+  }
+
+  .contact-info__left {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header-image {
+    height: 250px;
+    background-position: 60% 60%;
+    background-size: 150%;
+  }
+
+  nav ul {
+    width: 100%;
+  }
+
+  iframe {
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* HAMBURGER NAV */
+  .hamburger {
+    display: block;
+    opacity: 0;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .hamburger:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .line {
+    transition: all 0.2s;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .line {
+    transition: all 0.2s;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .upper-line {
+    transform: rotate(45deg) translate(7px, 6px);
+  }
+
+  .hamburger:checked ~ .hamburger-icon .middle-line {
+    opacity: 0;
+  }
+
+  .hamburger:checked ~ .hamburger-icon .lower-line {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /*front page*/
+  .contact-info__right {
+    width: 90%;
+  }
+}
